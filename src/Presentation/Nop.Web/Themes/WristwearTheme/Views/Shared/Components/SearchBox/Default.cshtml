@@ -39,7 +39,8 @@
                                 //display link to search page
                                 if (showLinkToResultSearch) {
                                     searchText = document.getElementById("small-searchterms").value;
-                                    $(".ui-autocomplete").append("<li class=\"ui-menu-item\" role=\"presentation\"><a href=\"/search?q=" + searchText + "\">@T("Search.SearchBox.SearchPageLink")</a></li>");
+                                    window.alert("test");
+                                    $(".ui-autocomplete").append("<li class=\"ui-menu-item main-search-item\" role=\"presentation\"><a href=\"/search?q=" + searchText + "\">@T("Search.SearchBox.SearchPageLink")</a></li>");
                                 }
                             }
                         })
