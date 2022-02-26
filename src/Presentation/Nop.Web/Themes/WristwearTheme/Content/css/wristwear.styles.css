@@ -36,7 +36,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 
 /* HEADER SECTION STYLE */
 .header-logo{text-align:center;}
-.header-upper{background:#071018;box-shadow:0px 0px 3px #999;-webkit-box-shadow: 0px 0px 3px #999;-moz-box-shadow: 0px 0px 3px #999;height:45px;border-bottom:1px solid #33393e;}
+.header-upper{background:#071018;box-shadow:0px 0px 3px #999;-webkit-box-shadow: 0px 0px 3px #999;-moz-box-shadow: 0px 0px 3px #999;height:60px;border-bottom:1px solid #33393e;}
 .currency-selector,.language-selector{float:left;margin:10px 8px 0px 0px;}
 .language-selector ul li {display: inline-block;padding: 0 5px;}
 .header-selectors-wrapper select{background:#071018 url("/Themes/WristwearTheme/Content/images/down-caret.png") no-repeat scroll right center !important;color:#fff;width:86px;margin-top:0px !important;padding:0px 15px 0px 5px !important;height:26px;font-size:12px;border:none !important;-moz-appearance:none;-webkit-appearance:none;}
@@ -61,7 +61,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .header-lower .search-box .navbar-form{padding-left:0px;}
 .header-lower .search-box .search-nav{background:#0e1c29;width:260px;padding-left:10px;border:1px solid #fff;border-radius:50px;}
 .forum-search-box .search-box-text:focus,.header-lower .search-box .search-nav:focus{border-color:#f10044;}
-.search-box .btn.search-box-button{font-size:0;background:url("../images/search-icon.png") no-repeat 0px 0px;border-radius:0px;width:34px;height:34px;transition:all 0.3s ease-in-out 0s;-webkit-transition:all 0.3s ease-in-out 0s;-moz-transition:all 0.3s ease-in-out 0s;-o-transition:all 0.3s ease-in-out 0s;right:-1px;position:absolute;margin-top:3px;}
+.search-box .btn.search-box-button{font-size:0;background:url("../images/search-icon.png") no-repeat 0px 0px;border-radius:0px;width:40px;height:40px;transition:all 0.3s ease-in-out 0s;-webkit-transition:all 0.3s ease-in-out 0s;-moz-transition:all 0.3s ease-in-out 0s;-o-transition:all 0.3s ease-in-out 0s;right:10px;position:absolute;}
 .header .search-box .btn{border-radius:0;}
 .form-control::-moz-placeholder,.form-control::-webkit-input-placeholder{color:#fff !important;opacity: 1;}
 #small-searchterms.form-control {color: #fff !important;}
@@ -531,15 +531,16 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
   width: 0;
 }
 .search-box .search-nav {
-  height: 45px;
+  height: 40px;
   padding: 0px 12px;
-  margin-right: -3px;
-  margin-top: -15px;
-  width: 750px;
+  margin-right: 0px;
+  margin-top: -10px;
+  width: calc(100% - 60px);
   background: #e5e5e5;
   border: none;
   box-shadow: none;
   float: left;
+  border-radius: 5px;
 }
 .search-input .basic-search .forum-search-text.form-control{padding:0px 12px; border-radius:0; margin-bottom:20px; height:34px; margin-right:-3px;}
 .price-range{float:left;margin-top:7px;width:100%;font-weight:700;}
@@ -2372,4 +2373,12 @@ td.spec-group-name {
 }
 .ui-state-default:focus{
     outline: none;
+}
+
+.ptb-5 {
+    padding:5px 0px;
+}
+
+.ptb-10 {
+  padding: 10px 0px;
 }
