@@ -115,7 +115,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu.sub-menusublist.first-level li .dropdown-menu.sub-menusublist.first-level,.header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu.sub-menusublist.first-level li .dropdown-menu.sub-menusublist.first-level li .dropdown-menu.sub-menusublist.first-level{display:none;}
 .header-menu .navbar.navbar-inverse .navbar-collapse{padding:0px;}
 
-.header-menu .navbar.navbar-inverse .nav.navbar-nav > li > a{float:left;padding:20px 22px;line-height:25px;color:#fff;text-transform:uppercase;font-weight:700;border-top:2px solid #0e1c29;border-bottom:2px solid #0e1c29;}
+.header-menu .navbar.navbar-inverse .nav.navbar-nav > li > a{float:left;padding:0px 22px;line-height:25px;color:#fff;text-transform:uppercase;font-weight:700;border-top:2px solid #0e1c29;border-bottom:2px solid #0e1c29;}
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown > a:hover:before{position:absolute;left:40%;height:12px;width:24px;content:"";top:54px;}
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a{padding:10px 15px 10px 35px;line-height:15px;background:url("../images/submenu-deactive-icon.png") no-repeat 20px 14px #f9f9f9 !important;white-space:normal;word-wrap:break-word;}
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a:hover{color:#f10044;background:url("../images/submenu-active-icon.png") no-repeat 20px 14px #f9f9f9 !important;}
@@ -2384,7 +2384,10 @@ td.spec-group-name {
 }
 
 .main-search-item {
-    height:40px;
-    border-bottom:1px;
-    background-color:red;
+  cursor: pointer;
+  height: 35px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #D3D3D3;
 }

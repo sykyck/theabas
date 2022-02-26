@@ -35,12 +35,11 @@
                                 return false;
                             },
                             //append link to the end of list
-                            open: function(event, ui) {
+                            open: function (event, ui) {
                                 //display link to search page
                                 if (showLinkToResultSearch) {
                                     searchText = document.getElementById("small-searchterms").value;
-                                    window.alert("test");
-                                    $(".ui-autocomplete").append("<li class=\"ui-menu-item main-search-item\" role=\"presentation\"><a href=\"/search?q=" + searchText + "\">@T("Search.SearchBox.SearchPageLink")</a></li>");
+                                    $(".ui-autocomplete").append("<li class=\"ui-menu-item\" role=\"presentation\"><a href=\"/search?q=" + searchText + "\">@T("Search.SearchBox.SearchPageLink")</a></li>");
                                 }
                             }
                         })
@@ -49,7 +48,7 @@
                             showLinkToResultSearch = item.showlinktoresultsearch;
                             //html encode
                             t = htmlEncode(t);
-                            return $("<li></li>")
+                            return $("<li class=\"main-search-item\"></li>")
                                 .data("item.autocomplete", item)
                                 .append("<a>@(Model.ShowProductImagesInSearchAutoComplete ? Html.Raw("<img src='\" + item.productpictureurl + \"'>") : null)" + t + "</a>")
                             .appendTo(ul);
