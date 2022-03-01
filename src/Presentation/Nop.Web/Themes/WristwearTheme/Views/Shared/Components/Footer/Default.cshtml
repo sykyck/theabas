@@ -155,9 +155,7 @@
                     @if (!Model.HidePoweredByNopCommerce)
                     {
                         <div class="poweredby">
-                            @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
-                                Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key*@
-                            Powered by <a href="@(OfficialSite.Main)">nopCommerce</a>
+                            Powered by <a href="@(OfficialSite.Main)">The ABAs</a>
                         </div>
                     }
                     <div class="footer-disclaimer">
@@ -166,12 +164,6 @@
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 footer-store-theme">
                     @await Component.InvokeAsync("StoreThemeSelector")
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="designedby pull-right">
-                        <div class="footer-theme-credit"><a href="http://themes.nopaccelerate.com/themes/wristwear-nopcommerce-theme/" target="_blank" title="Responsive Wristwear Theme for nopCommerce">Wristwear Theme</a></div>
-                        <div class="footer-designedby">Theme by <a target="_blank" href="http://www.nopaccelerate.com/">nopAccelerate</a></div>
-                    </div>
                 </div>
             </div>
         </div>
