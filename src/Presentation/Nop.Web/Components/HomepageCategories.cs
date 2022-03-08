@@ -6,23 +6,17 @@ using Nop.Web.Framework.Components;
 
 namespace Nop.Web.Components
 {
-    public class HomepageCategoriesViewComponent : NopViewComponent
+    public class HomepageOffersViewComponent : NopViewComponent
     {
-        private readonly ICatalogModelFactory _catalogModelFactory;
 
-        public HomepageCategoriesViewComponent(ICatalogModelFactory catalogModelFactory)
+        public HomepageOffersViewComponent()
         {
-            _catalogModelFactory = catalogModelFactory;
         }
 
         /// <returns>A task that represents the asynchronous operation</returns>
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var model = await _catalogModelFactory.PrepareHomepageCategoryModelsAsync();
-            if (!model.Any())
-                return Content("");
-
-            return View(model);
+            return View();
         }
     }
 }
